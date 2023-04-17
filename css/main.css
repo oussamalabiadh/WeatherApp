@@ -1,0 +1,284 @@
+/* start global rules  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    text-transform: capitalize;
+    color: #787878;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #455a64;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1.5;
+}
+
+.main-color {
+    color: #37aec3;
+}
+
+/* end global rules  */
+
+/*******   start header    *******/
+.navbar {
+    background-color: #37aec3;
+    box-shadow: 0px 10px 5px #37aec3;
+    border-end-start-radius: 5px;
+    border-end-end-radius: 10px;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.navbar-brand img {
+    width: 60px;
+    height: 50px;
+}
+
+.nav-link {
+    margin: 0 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.6s;
+}
+
+.nav-item:hover .nav-link::after {
+    left: 0;
+}
+
+.navbar-toggler {
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px 5px;
+}
+
+.navbar-toggler-icon {
+    background-color: #FFF !important;
+    border-radius: 5px;
+    height: 3px;
+    margin: 2px;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem #fff;
+}
+
+.item h1 {
+    color: #37aec3;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+#search-bar {
+    padding: 5px 15px;
+    border: 1px solid #3199ab;
+    border-radius: 20px;
+}
+
+.top-icon {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3199ab;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: all 0.5;
+}
+
+.top-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*******   end header    *******/
+/********  start search  *******/
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card .date {
+    background-color: #374850;
+}
+
+.date p {
+    color: #bfc1c8;
+    line-height: 1.9;
+}
+
+#location {
+    color: #fff !important;
+    font-size: 22px !important;
+    text-shadow: 0 0 1px #fff, 0 0 1px #fff !important;
+    font-family: cursive, 'Times New Roman', Times, serif;
+}
+
+.temp-details p {
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0 0 1px #455a64, 0 0 1px #455a64;
+}
+
+.temp-details {
+    background-color: #3199AB;
+}
+
+.temp-degree h2 {
+    color: #fff;
+    font-size: 50px;
+    margin: 3px;
+    font-weight: 600;
+}
+
+.temp-degree sup {
+    font-family: century-gothic, sans-serif;
+}
+
+.temp-details img {
+    width: 90px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.card2 .temp-details,
+.card3 .temp-details {
+    background-color: #83bbc4;
+    transition: all 0.3s;
+}
+
+.card:hover .temp-details {
+    background-color: #3199AB;
+}
+
+.weather-details {
+    color: #fff;
+    font-weight: 700;
+}
+
+.temp-degree p {
+    color: #fff !important;
+}
+
+.temp-degree p {
+    font-weight: 600;
+}
+
+/********  end search  *******/
+/********  start mobile app  *******/
+.download h2 {
+    color: #37aec3;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.download-btns button,
+form button {
+    background-color: #3199ab !important;
+    border-radius: 25px !important;
+    padding: 10px 15px !important;
+    transition: all 0.5s !important;
+    color: #fff !important;
+    margin: 10px;
+    font-weight: 600 !important;
+    letter-spacing: 2px !important;
+}
+
+.download-btns button:hover,
+form button:hover {
+    background-color: transparent !important;
+    color: #3199AB !important;
+    font-weight: bold !important;
+    outline: 2px solid #3199ab !important;
+}
+
+/********  end mobile app  *******/
+/********   start subscribe  *****/
+.subscribe-info h3 {
+    color: #3199ab;
+}
+
+form input {
+    padding: 5px 15px;
+    border: 1px solid #3199ab;
+    border-radius: 20px;
+}
+
+form button {
+    margin-top: 30px !important;
+}
+
+/********   end subscribe  *****/
+/********   start footer   ******/
+footer h2 {
+    font-family: 'The Nautigal', cursive;
+}
+
+.icons ul li a {
+    color: #aaa !important;
+}
+
+.trade-mark {
+    color: #3199ab;
+}
+
+/*******     end footer     *****/
+
+@media screen and (max-width:991px) {
+    .item h1 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:991px) {
+    #subscribe .row .col-lg-8 {
+        order: 2;
+    }
+
+    #subscribe .row .col-lg-4 {
+        order: 1;
+    }
+}
+
+@media screen and (max-width:400px) {
+    footer .container {
+        flex-direction: column !important;
+    }
+}
